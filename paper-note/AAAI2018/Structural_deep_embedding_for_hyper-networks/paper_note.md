@@ -35,3 +35,4 @@
 
 ### Loss Function ###
 ### Optimization ###
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig3.jpg)
