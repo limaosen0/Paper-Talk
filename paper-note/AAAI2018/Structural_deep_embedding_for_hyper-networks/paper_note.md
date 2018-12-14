@@ -22,10 +22,16 @@
 在 adjacent matrix 中，第i行表示第i个 node 的 neighborhood structure。将 adjacent matrix 输入至一个 autoencoder 来保存结构信息，其中 encoder 和 decoder 都是非线性映射，可以被表示为
 
 <img src="http://latex.codecogs.com/gif.latex? \mathbf{X}_i=\sigma(\mathbf{W}^{(1)}\mathbf{A}_i + \mathbf{b}^{(1)})" />
-<img src="http://latex.codecogs.com/gif.latex? \hat{\mathbf{A}}_i=\sigma(\hat{\mathbf{W}}^{(1)}\mathbf{A}_i + \hat{\mathbf{b}}^{(1)}）" />
+<img src="http://latex.codecogs.com/gif.latex? \hat{\mathbf{A}}_i=\sigma(\hat{\mathbf{W}}^{(1)}\mathbf{A}_i + \hat{\mathbf{b}}^{(1)})" />
 
 --------
-另一方面，关于tuplewise similarity function的设计，不能采用node之间的线性组合运算（文中证明），故“尝试”采用非线性运算的方式，如 second layer and third layer。
+另一方面，关于tuplewise similarity function的设计，不能采用node之间的线性组合运算（文中证明），故“尝试”采用非线性运算的方式，如 second layer and third layer。 The second layer 是一个全连接非线性神经网络，对三个节点，将其在 the first layer 输出的中间表达输入其中，得到一个 latent representation，即
+
+<img src="http://latex.codecogs.com/gif.latex? \mathbf{L}_{ijk}=\sigma(\mathbf{W}_{a}^{(2)}\mathbf{X}_i^a + \mathbf{W}_{b}^{(2)}\mathbf{X}_j^b + \mathbf{W}_{c}^{(2)}\mathbf{X}_k^c + \mathbf{b}^{(2)})" />
+随后再将 latent representation 映射至一个 probability space，即
+
+<img src="http://latex.codecogs.com/gif.latex? \mathbf{S}_{ijk} = \mathcal{S}(\mathbf{X}_i^a, \mathbf{X}_j^b, \mathbf{X}_k^c) = \sigma(\mathbf{W}^{(3)}\mathbf{L}_{ijk}+\mathbf{b}^{(3)})
+对同一个 hyperedge 中的 node 需要此量尽量大，当三个点不属于同一个 hyperedge 时，需要此量尽量小。
 
 ### Loss Function ###
 ### Optimization ###
