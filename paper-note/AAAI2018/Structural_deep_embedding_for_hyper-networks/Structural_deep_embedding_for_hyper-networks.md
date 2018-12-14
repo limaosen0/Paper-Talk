@@ -9,6 +9,10 @@
 
 ## Deep Hyper-Network Embedding ##
 ### Symbols and Framework ###
+文中关键变量被展示，如图：
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig1.jpg)
+提出的DHNE模型的框架如图所示
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig2.jpg)
+关于tuplewise similarity function的设计，不能采用node之间的线性组合运算（文中证明），故设计思路如图。
 ### Loss Function ###
 ### Optimization ###
