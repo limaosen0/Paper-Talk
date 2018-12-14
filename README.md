@@ -1,17 +1,14 @@
 # Paper-Talk
 The interesting papers read are shared here. The fields of papers include but do not limited in： **graph representation learning, skeleton-based action recognition and prediction, varitional inference** and so on. The raw papers (links), paper notes (seperated according to their publication) are presented.
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-$$ 
-x = {-b \pm \sqrt{b^2-4ac} \over 2a}. 
-$$
-
-
 Graph Representation Learning
 ======
 Hypergraph embedding
 -----
+1. Structural Deep Embedding for Hyper-Networks (AAAI 2018)
+    - Authors: K. Tu, P. Cui, X. Wang, F. Wang, W. Zhu
+    - Paper
+    - Notes
 
 Skeleton-based Action Analysis
 ======
