@@ -19,7 +19,7 @@
 
 首先，关于保留 global structure (second-order proximity)，提出一种autoencoder解决方法，如first layer。具体地，先得到 hypergraph 的 adjacent matrix **A**。对 hypergraph **G=（V, E）**，先得到其 incidence matrix **H**，再得到 node degree matrix **D**v，则
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= \mathbf{A}=\mathbf{HH}^{\rm{T}}-\mathbf{D}_v" style="border:none;">
+<center><img src="http://latex.codecogs.com/gif.latex? \mathbf{A}=\mathbf{HH}^{\rm{T}}-\mathbf{D}_v" /></center>
 
 在 adjacent matrix 中，第i行表示第i个 node 的 neighborhood structure。将 adjacent matrix 输入至一个 autoencoder 来保存结构信息，其中 encoder 和 decoder 都是非线性映射，可以被表示为
 
