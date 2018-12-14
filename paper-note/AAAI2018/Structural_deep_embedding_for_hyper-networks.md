@@ -8,8 +8,6 @@
 针对上述问题，提出模型：Deep Hyper-Network Embedding (DHNE)模型。对问题1，基于非线性网络设计tuplewise similarity function以约束hyperedge中所有node的相似性；对问题2，提出一个autoencoder framework以在编码-重构的过程中捕获neighborhood structure。
 
 ## Deep Hyper-Network Embedding ##
-
-|    Symbols    | Meaning |
-| ---------- | --- |
-| \\(T\\) |  number of node types |
-| Mike       |  32 |
+### Symbols and Framework ###
+### Loss Function ###
+### Optimization ###
