@@ -9,5 +9,6 @@
 
 ## Deep Hyper-Network Embedding ##
 ### Symbols and Framework ###
+![image](http://github.com/limaosen0/readme_add_pic/raw/master/images/nongshalie.jpg)
 ### Loss Function ###
 ### Optimization ###
