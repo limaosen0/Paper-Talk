@@ -34,10 +34,17 @@
 对同一个 hyperedge 中的 node 需要此量尽量大，当三个点不属于同一个 hyperedge 时，需要此量尽量小。
 
 ### Loss Function ###
-<img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_1 = -(\mathbf{R}_{ijk}\log\mathbf{S}_{ijk}+(1-\mathbf{R}_{ijk})\log(1-\mathbf{S}_{ijk}))" />
-<img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_2 = \sum_t\|sign(\mathbf{A}_i^t)\odot(\mathbf{A}_i^t-\hat{\mathbf{A}}_i^t)\|_F^2" />
+对于 autoencoder 模块而言，其 loss 为
+
+<img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_1 = \sum_t\|sign(\mathbf{A}_i^t)\odot(\mathbf{A}_i^t-\hat{\mathbf{A}}_i^t)\|_F^2" />
+对于 tuplewise similarity function 部分，其loss 为
+
+<img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_2 = -(\mathbf{R}_{ijk}\log\mathbf{S}_{ijk}+(1-\mathbf{R}_{ijk})\log(1-\mathbf{S}_{ijk}))" />
+其中 **R** 表示 hyperedge 的真实存在情况。最后，总体的 loss 可以表示为
+
 <img src="http://latex.codecogs.com/gif.latex? \mathcal{L} = \mathcal{L}_1+\alpha\mathcal{L}_2" />
 
 ### Optimization ###
 模型的训练算法如图所示。
+
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig3.jpg)
