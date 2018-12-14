@@ -9,6 +9,6 @@
 
 ## Deep Hyper-Network Embedding ##
 ### Symbols and Framework ###
-![image](http://github.com/limaosen0/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig2.jpg)
 ### Loss Function ###
 ### Optimization ###
