@@ -26,13 +26,8 @@
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \mathbf{X}_i=\sigma(\mathbf{W}^{(1)}\mathbf{A}_i \+ \mathbf{b}^{(1)})" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \hat{\mathbf{A}}_i=\sigma(\hat{\mathbf{W}}^{(1)}\mathbf{A}_i \+ \hat{\mathbf{b}}^{(1)})" style="border:none;">
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-<img src="http://latex.codecogs.com/gif.latex?\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}" />
+<img src="http://latex.codecogs.com/gif.latex? a" />
 
-作者：Deep Reader
-链接：https://www.zhihu.com/question/26887527/answer/43166739
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 接着，关于tuplewise similarity function的设计，不能采用node之间的线性组合运算（文中证明）。
 
