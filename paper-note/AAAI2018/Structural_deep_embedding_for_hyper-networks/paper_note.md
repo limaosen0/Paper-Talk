@@ -34,5 +34,8 @@
 对同一个 hyperedge 中的 node 需要此量尽量大，当三个点不属于同一个 hyperedge 时，需要此量尽量小。
 
 ### Loss Function ###
+<img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_1 = -(\mathbf{R}_{ijk}\log\mathbf{S}_{ijk}+(1-\mathbf{R}_{ijk})\log(1-\mathbf{S}_{ijk}))" />
+<img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_2 = \sum_t\|sign(\mathbf{A}_i^t)\circ(\mathbf{A}_i^t-\hat{\mathbf{A}}_i^t)\|_F^2" />
+<img src="http://latex.codecogs.com/gif.latex? \mathcal{L} = \mathcal{L}_1+\mathcal{L}_2" />
 ### Optimization ###
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig3.jpg)
