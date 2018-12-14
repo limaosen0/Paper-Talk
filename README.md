@@ -8,7 +8,7 @@ The interesting papers read are shared here. The fields of papers include but do
 Structural Deep Embedding for Hyper-Networks (AAAI 2018)
   - Authors: K. Tu, P. Cui, X. Wang, F. Wang, W. Zhu
   - [Paper](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16797)
-  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks.md)
+  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/Structural_deep_embedding_for_hyper-networks.md)
   
 Hypergraph Neural Networks (AAAI 2019)
   - Authors: Y. Feng, H. You, Z. Zhang, R. Ji, Y. Gao
