@@ -26,6 +26,8 @@
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \mathbf{X}_i=\sigma(\mathbf{W}^{(1)}\mathbf{A}_i \+ \mathbf{b}^{(1)})" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \hat{\mathbf{A}}_i=\sigma(\hat{\mathbf{W}}^{(1)}\mathbf{A}_i \+ \hat{\mathbf{b}}^{(1)})" style="border:none;">
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 接着，关于tuplewise similarity function的设计，不能采用node之间的线性组合运算（文中证明）。
 
 ### Loss Function ###
