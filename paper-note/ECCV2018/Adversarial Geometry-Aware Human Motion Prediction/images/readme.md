@@ -1,1 +1,1 @@
-The key figures in the paper.
+The important images of paper 'Adversarial Geometry-Aware Human Motion Prediction'.
