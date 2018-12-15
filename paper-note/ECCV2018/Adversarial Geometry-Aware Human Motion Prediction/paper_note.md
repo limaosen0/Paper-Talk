@@ -19,7 +19,7 @@ AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框�
 ### Geometry-aware encoder-decoder predictor ###
 在 predictor 中，encoder 从输入序列中学习 hidden representation，解码器根据 representation 和 seed motion frame 来生成未来动作。此外，attention 机制和 biLSTM 也被结合至网络中。具体地，predictor (encoder & decoder) 中的循环单元采用 GRU。使用 residual connection 来建模运动速度，而不是直接在绝对的角度上进行操作。每个输入序列与 action class 相连被共同送入模型。
 
-** Geodesic loss **
+**Geodesic loss:** 
 
 
 文中关键变量被展示，如图：
