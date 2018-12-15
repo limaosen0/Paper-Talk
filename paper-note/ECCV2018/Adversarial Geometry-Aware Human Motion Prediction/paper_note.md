@@ -11,9 +11,10 @@
   
 效果如图
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig1.jpg)
+其中，第二行的输入帧与预测帧之间明显有断裂，第三行的长期动作具有较大误差，均不如 AGED 模型。
 
-## Deep Hyper-Network Embedding ##
-### Symbols and Framework ###
+## Adversarial Geometry-aware Encoder-decoder Model ##
+### Geometry-aware encoder-decoder predictor ###
 文中关键变量被展示，如图：
 
 基于上述变量，定义了 hyper-network, the first-order proximity and the second-order proximity.
