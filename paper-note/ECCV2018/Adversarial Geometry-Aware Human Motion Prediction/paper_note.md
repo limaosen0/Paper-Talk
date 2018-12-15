@@ -1,6 +1,6 @@
 ## Introduction ##
 
-  任务：给定一个输入3D骨架序列时，预报未来几毫秒内的人体姿态。基于框架：recurrent encoder-decoder。目前这种任务存在问题：
+  任务：给定一个输入3D骨架序列时，预报短期或长期的人体姿态。基于框架：recurrent encoder-decoder。目前这种任务存在问题：
   1. prediction discontinuities
   2. fail to predict in longer time  
 
@@ -17,6 +17,11 @@
 AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框架如图所示。
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
 ### Geometry-aware encoder-decoder predictor ###
+在 predictor 中，encoder 从输入序列中学习 hidden representation，解码器根据 representation 和 seed motion frame 来生成未来动作。此外，attention 机制和 biLSTM 也被结合至网络中。具体地，predictor (encoder & decoder) 中的循环单元采用 GRU。使用 residual connection 来建模运动速度，而不是直接在绝对的角度上进行操作。每个输入序列与 action class 相连被共同送入模型。
+
+** Geodesic loss **
+
+
 文中关键变量被展示，如图：
 
 基于上述变量，定义了 hyper-network, the first-order proximity and the second-order proximity.
