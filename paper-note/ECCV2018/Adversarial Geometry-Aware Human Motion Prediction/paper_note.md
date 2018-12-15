@@ -14,6 +14,8 @@
 其中，第二行的输入帧与预测帧之间明显有断裂，第三行的长期动作具有较大误差，均不如 AGED 模型。
 
 ## Adversarial Geometry-aware Encoder-decoder Model ##
+AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框架如图所示。
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
 ### Geometry-aware encoder-decoder predictor ###
 文中关键变量被展示，如图：
 
