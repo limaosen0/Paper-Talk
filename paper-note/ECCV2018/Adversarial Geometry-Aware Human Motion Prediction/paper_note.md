@@ -22,6 +22,7 @@ AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框�
 **Geodesic loss:** 目的是拟合生成样本， measure the distance between predicted/groundtruth 3D rotations。事实上，Euclidean loss 会忽视几何结构信息，而文中采用 geodesic loss。对于旋转轴为<img src="http://latex.codecogs.com/gif.latex? \mathbf{u}=(u_1, u_2, u_3)^{\rm{T}}" />的 rotation：<img src="http://latex.codecogs.com/gif.latex? \mathbf{\theta}=(\alpha, \beta, \gamma)" />，对应旋转矩阵为<img src="http://latex.codecogs.com/gif.latex? \mathbf{R}=[\mathbf{\theta} \cdot \mathbf{u}]_{\times}" />，两个符号分别是 inner/outer product。说实话完全没看懂这在扯什么，由 Euler角定义旋转矩阵的方法为：
 
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig3.jpg)
+
 给定两个旋转矩阵<img src="http://latex.codecogs.com/gif.latex? \mathbf{R}" />和<img src="http://latex.codecogs.com/gif.latex? \hat{\mathbf{R}}" />，可得到在两个矩阵之间不同角度的旋转矩阵，计算方法
 
 <img src="http://latex.codecogs.com/gif.latex? \log\hat{\mathbf{R}}\mathbf{R}^{\rm{T}}=A\frac{arcsin(\|A\|_2)}{\|A\|_2}" />
@@ -31,5 +32,8 @@ AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框�
 相应的，geodesic loss 被定义为
 
 <img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_{geo}=\sum_{j=n+1}^{n+m}\sum_{k=1}^{K/3}\mathbf{d}_G(\hat{\mathbf{R}}_j^k,\mathbf{R}_j^k)" />
+
+### Fidelity and continuity discriminators ###
+
 
 
