@@ -34,6 +34,10 @@ AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框�
 <img src="http://latex.codecogs.com/gif.latex? \mathcal{L}_{geo}=\sum_{j=n+1}^{n+m}\sum_{k=1}^{K/3}\mathbf{d}_G(\hat{\mathbf{R}}_j^k,\mathbf{R}_j^k)" />
 
 ### Fidelity and continuity discriminators ###
-
+模型中包含了两个discriminator，分别是：
+  1. 非条件的保真度 (unconditional, fidelity) discriminator：区别短期序列，衡量smoothness。
+  2. 条件的连续度 (conditional, continuity) discriminator：区别长期序列，衡量coherence。
+  
+Loss 不做赘述，参考论文。
 
 
