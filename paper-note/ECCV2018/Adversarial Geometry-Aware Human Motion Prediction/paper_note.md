@@ -8,11 +8,14 @@
   1. 几何结构约束 & temporal smoothness and continuity regularization
   2. Framewise geodesic loss 而不是Euclidean loss
   3. Adversarial training mechanism, 2 discriminators (fidelity & continuity)
+  
+效果如图
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig1.jpg)
 
 ## Deep Hyper-Network Embedding ##
 ### Symbols and Framework ###
 文中关键变量被展示，如图：
-![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/images/fig1.jpg)
+
 基于上述变量，定义了 hyper-network, the first-order proximity and the second-order proximity.
 
 提出的DHNE模型的框架如图所示
