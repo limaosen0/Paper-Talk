@@ -29,4 +29,4 @@ Adversarial Geometry-Aware Human Motion Prediction (ECCV 2018)
 Neural Graph Matching Networks for Fewshot 3D Action Recognition (ECCV 2018)
   - Authors: M. Guo, E. Chou, D. Huang, S. Song, S. Yeungm, F. Li
   - [Paper](http://openaccess.thecvf.com/content_ECCV_2018/html/Michelle_Guo_Neural_Graph_Matching_ECCV_2018_paper.html)
-  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/paper_note.md)
+  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Neural_graph_matching_networks_for_fewshot_3d_action_recognition/paper_note.md)
