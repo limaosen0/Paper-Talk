@@ -15,11 +15,18 @@ Hypergraph Neural Networks (AAAI 2019)
   - Paper
   - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2019/Hypergraph_neural_networks.md)
 
-## 2 Skeleton-based Action Analysis ##
+## 2 3D Action Analysis ##
 
 ### 2.1 Action prediction and generation ###
 
 Adversarial Geometry-Aware Human Motion Prediction (ECCV 2018)
   - Authors: L. Gui, Y. Wang, X. Liang, J. Moura
   - [Paper](http://openaccess.thecvf.com/content_ECCV_2018/html/Liangyan_Gui_Adversarial_Geometry-Aware_Human_ECCV_2018_paper.html)
-  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/AAAI2018/Structural_deep_embedding_for_hyper-networks/paper_note.md)
+  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/paper_note.md)
+  
+### 2.2 Action recognition ###
+
+Neural Graph Matching Networks for Fewshot 3D Action Recognition (ECCV 2018)
+  - Authors: M. Guo, E. Chou, D. Huang, S. Song, S. Yeungm, F. Li
+  - [Paper](http://openaccess.thecvf.com/content_ECCV_2018/html/Michelle_Guo_Neural_Graph_Matching_ECCV_2018_paper.html)
+  - [Notes](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/paper_note.md)
