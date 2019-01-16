@@ -1,17 +1,14 @@
 ## Introduction ##
 
   任务：有效地实现3D动作识别（指的是人与环境交互的场景）。目前这种任务存在问题：
-  1. labeled RGB数据很多，但labeled 3D数据很少；
-  2. RGB方法很难迁移过来。  
+  1. labeled RGB 数据很多，但labeled 3D 数据很少；
+  2. RGB 方法很难迁移过来。  
 
-针对上述问题，提出 adversarial geometry-aware encoder-decoder (AGED) 模型，具体：
-  1. 几何结构约束 & temporal smoothness and continuity regularization
-  2. Framewise geodesic loss 而不是Euclidean loss
-  3. Adversarial training mechanism, 2 discriminators (fidelity & continuity)
-  
-效果如图
+针对上述问题，提出 few-shot learning的方法，考虑动作的 inherent structure，利用 Graph representation learning，提出 Neural Graph Matching Networks（NGM），具体：
+  1. Graph generation：利用环境种的3D空间信息，生成中间图表达，node 表示 entity，edge 表示 interaction
+  2. Graph matching：将 graph matching function 视为一种 metric，进行 few-shot learning。
+示意图如下
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig1.jpg)
-其中，第二行的输入帧与预测帧之间明显有断裂，第三行的长期动作具有较大误差，均不如 AGED 模型。
 
 ## Adversarial Geometry-aware Encoder-decoder Model ##
 AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框架如图所示。
