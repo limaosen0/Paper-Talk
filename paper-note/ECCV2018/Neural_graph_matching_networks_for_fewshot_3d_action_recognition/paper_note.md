@@ -8,9 +8,20 @@
   1. Graph generation：利用环境种的3D空间信息，生成中间图表达，node 表示 entity，edge 表示 interaction
   2. Graph matching：将 graph matching function 视为一种 metric，进行 few-shot learning。
 示意图如下
-![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig1.jpg)
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Neural_graph_matching_networks_for_fewshot_3d_action_recognition/images/fig1.jpg)
+尽管前两行在视觉上十分接近，但其实并非同一动作；但后两行的 human-object-environmen t空间结构接近，表达同一个动作。
 
-## Adversarial Geometry-aware Encoder-decoder Model ##
+Contribution:
+  1. 对 3D 动作识别引入 few-shot learning，解决少样本训练困难的问题；
+  2. 使用图表达来显式地利用 3D 数据的空间信息；
+  3. 提出 NGM 模型，生成和匹配图表达，效果良好。
+
+## Neural Graph Matiching Networks ##
+模型的整体框架如下，
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
+接下来，具体介绍 Graph generation 和 Graph matching 过程。
+### Graph Generation ###
+### Graph Matching ###
 AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框架如图所示。
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
 ### Geometry-aware encoder-decoder predictor ###
