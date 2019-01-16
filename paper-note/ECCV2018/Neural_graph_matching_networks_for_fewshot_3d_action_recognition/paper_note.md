@@ -1,8 +1,8 @@
 ## Introduction ##
 
-  任务：给定一个输入3D骨架序列时，预报短期或长期的人体姿态。基于框架：recurrent encoder-decoder。目前这种任务存在问题：
-  1. prediction discontinuities
-  2. fail to predict in longer time  
+  任务：有效地实现3D动作识别（指的是人与环境交互的场景）。目前这种任务存在问题：
+  1. labeled RGB数据很多，但labeled 3D数据很少；
+  2. RGB方法很难迁移过来。  
 
 针对上述问题，提出 adversarial geometry-aware encoder-decoder (AGED) 模型，具体：
   1. 几何结构约束 & temporal smoothness and continuity regularization
