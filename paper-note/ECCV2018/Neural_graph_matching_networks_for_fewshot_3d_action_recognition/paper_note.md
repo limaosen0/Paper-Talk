@@ -18,7 +18,7 @@ Contribution:
 
 ## Neural Graph Matiching Networks ##
 模型的整体框架如下，
-![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
+![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Neural_graph_matching_networks_for_fewshot_3d_action_recognition/images/fig2.jpg)
 接下来，具体介绍 Graph generation 和 Graph matching 过程。
 ### Graph Generation ###
 ### Graph Matching ###
