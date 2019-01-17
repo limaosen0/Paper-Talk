@@ -36,4 +36,7 @@ edge 的学习方法是在一个 end-to-end 训练中被训练出来的，可自
 ### Graph Matching ###
 这是一种 inexact graph matching 问题，因为节点数不同，节点之间的关系千变万化。
 
+### Learning Optimization ###
+最小化负的 log-probability，即 maximize log-likelihood。
+
 
