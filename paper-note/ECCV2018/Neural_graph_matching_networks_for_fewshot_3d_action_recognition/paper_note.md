@@ -22,7 +22,12 @@ Contribution:
 接下来，具体介绍 Graph generation 和 Graph matching 过程。
 ### Graph Generation ###
 1, Node Construction.
+节点的获取方式主要由两种：人工标注的含节点标注的数据集，或用目标检测与标注算法标注获得的节点。
+
 2, Edge Learning.
+edge 的学习方法是在一个 end-to-end 训练中被训练出来的，可自动推断出节点之间的关系。对两个节点 i 和 j，学得的邻接矩阵可以表示为
+<img src="http://latex.codecogs.com/gif.latex? \mathbf{A}_{i,j}=\Phi(x_i, x_j)=MLP_{edge}(|f(x_i)-f(x_j)|)" />
+
 ### Graph Matching ###
 AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框架如图所示。
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
