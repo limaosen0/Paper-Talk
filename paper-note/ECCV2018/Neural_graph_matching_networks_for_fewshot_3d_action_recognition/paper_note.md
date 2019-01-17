@@ -21,6 +21,8 @@ Contribution:
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Neural_graph_matching_networks_for_fewshot_3d_action_recognition/images/fig2.jpg)
 接下来，具体介绍 Graph generation 和 Graph matching 过程。
 ### Graph Generation ###
+1, Node Construction.
+2, Edge Learning.
 ### Graph Matching ###
 AGED 包含了一个encoder-decoder predictor 和两个 discriminators, 其框架如图所示。
 ![image](https://github.com/limaosen0/Paper-Talk/blob/master/paper-note/ECCV2018/Adversarial%20Geometry-Aware%20Human%20Motion%20Prediction/images/fig2.jpg)
